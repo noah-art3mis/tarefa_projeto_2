@@ -1,6 +1,9 @@
-package loja.src;
+package loja.src.dao;
 
-public class ClienteDAO implements IClienteDAO {
+import loja.src.dao.generics.GenericDAO;
+import loja.src.domain.Cliente;
+
+public class ClienteDAO extends GenericDAO implements IClienteDAO {
 
   public Cliente create(String id) {
     return null;

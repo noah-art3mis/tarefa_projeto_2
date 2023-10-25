@@ -1,11 +1,15 @@
-package loja.src;
+package loja.src.services;
 
-public class ClienteService implements IClienteService {
+import loja.src.dao.IClienteDAO;
+import loja.src.domain.Cliente;
+import loja.src.services.generic.GenericService;
+
+public class ClienteService extends GenericService implements IClienteService {
 
   IClienteDAO clienteDAO;
 
   public ClienteService(IClienteDAO clienteDAO) {
-    this.clienteDAO = clienteDAO;
+    super(clienteDAO);
   }
 
   @Override

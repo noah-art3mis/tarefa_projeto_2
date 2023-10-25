@@ -1,4 +1,4 @@
-package loja.src;
+package loja.src.domain;
 
 public class Cliente {
 

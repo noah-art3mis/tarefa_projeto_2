@@ -1,4 +1,6 @@
-package loja.src;
+package loja.src.dao;
+
+import loja.src.domain.Cliente;
 
 public class ClienteDAOMock implements IClienteDAO {
 

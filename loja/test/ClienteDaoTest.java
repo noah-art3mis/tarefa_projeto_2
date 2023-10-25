@@ -5,9 +5,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import loja.src.Cliente;
-import loja.src.ClienteDAOMock;
-import loja.src.IClienteDAO;
+import loja.src.dao.ClienteDAOMock;
+import loja.src.dao.IClienteDAO;
+import loja.src.domain.Cliente;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,7 +23,7 @@ public class ClienteDaoTest {
 
   @Test
   public void createTest() {
-    cliente = dao.create("123");
+    cliente = dao.create("456");
     assertNotNull(cliente);
   }
 

@@ -6,11 +6,12 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import loja.src.Cliente;
-import loja.src.ClienteDAOMock;
-import loja.src.ClienteService;
-import loja.src.IClienteDAO;
-import loja.src.IClienteService;
+import loja.src.dao.ClienteDAOMock;
+import loja.src.dao.IClienteDAO;
+import loja.src.domain.Cliente;
+import loja.src.services.ClienteService;
+import loja.src.services.IClienteService;
+
 import org.junit.Before;
 import org.junit.Test;
 

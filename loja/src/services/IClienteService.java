@@ -1,6 +1,8 @@
-package loja.src;
+package loja.src.services;
 
-public interface IClienteDAO {
+import loja.src.domain.Cliente;
+
+public abstract interface IClienteService {
   public Cliente create(String id);
 
   public Cliente read(String id);
