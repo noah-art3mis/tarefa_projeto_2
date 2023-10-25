@@ -9,7 +9,8 @@ public class ClienteService extends GenericService implements IClienteService {
   IClienteDAO clienteDAO;
 
   public ClienteService(IClienteDAO clienteDAO) {
-    super(clienteDAO);
+    super();
+    this.clienteDAO = clienteDAO;
   }
 
   @Override

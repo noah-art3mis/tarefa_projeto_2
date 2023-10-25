@@ -5,7 +5,7 @@ import loja.src.domain.Cliente;
 public class ClienteDAOMock implements IClienteDAO {
 
   public Cliente create(String id) {
-    return new Cliente("1111111111");
+    return new Cliente(id);
   }
 
   public Cliente read(String id) {

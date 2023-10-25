@@ -1,14 +1,11 @@
 package loja.src.services.generic;
 
+import loja.src.dao.generics.GenericDAO;
 import loja.src.dao.generics.IGenericDAO;
 
 public abstract class GenericService implements IGenericService {
 
-  IGenericDAO dao;
-
-  public GenericService(IGenericDAO dao) {
-    this.dao = dao;
-  }
+  IGenericDAO dao = new GenericDAO();
 
   @Override
   public <T> T create(String id) {
